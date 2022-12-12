@@ -18,8 +18,6 @@ public class Film {
     @Column(name = "description")
     String description;
 
-    @Column(name= "release_year")
-    int releaseYear;
 
     @Column(name = "length")
     int filmLength;
@@ -52,13 +50,7 @@ public class Film {
         this.description = description;
     }
 
-    public int getReleaseYear() {
-        return releaseYear;
-    }
 
-    public void setReleaseYear(int releaseYear) {
-        this.releaseYear = releaseYear;
-    }
 
     public int getFilmLength() {
         return filmLength;
