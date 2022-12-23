@@ -24,5 +24,12 @@ public class FilmTest {
         Assertions.assertEquals(1,film.getFilmID());
     }
 
+    @Test
+    public void setterGetterFilmTitle(){
+        Film film = new Film();
+        film.setTitle("title");
+        Assertions.assertEquals("title",film.getTitle());
+    }
+    
 
 }
