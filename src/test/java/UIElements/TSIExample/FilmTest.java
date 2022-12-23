@@ -11,12 +11,18 @@ public class FilmTest {
         Assertions.assertNotNull(film);
     }
 
-//    @Test
-//    public void testGetFilmID(){
-//        Film film = new Film();
-//        Assertions.assertNotNull(film.getFilmID());
-//    }
-//
-//    @Test
-//    public void set
+    @Test
+    public void testFilmType(){
+        Film film = new Film();
+        Assertions.assertInstanceOf(Film.class,film);
+    }
+
+    @Test
+    public void setterGetterFilmID(){
+        Film film = new Film();
+        film.setFilmID(1);
+        Assertions.assertEquals(1,film.getFilmID());
+    }
+
+
 }
