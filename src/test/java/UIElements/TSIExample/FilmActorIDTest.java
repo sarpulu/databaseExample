@@ -11,4 +11,11 @@ public class FilmActorIDTest {
         Assertions.assertNotNull(filmActorId);
     }
 
+    @Test
+    public void testConstructor(){
+        FilmActorId filmActorId = new FilmActorId(1,1);
+        Assertions.assertNotNull(filmActorId);
+
+    }
+
 }
