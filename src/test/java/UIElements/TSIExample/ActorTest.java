@@ -13,8 +13,8 @@ public class ActorTest {
 
     @Test
     public void testFilmType(){
-        Film film = new Film();
-        Assertions.assertInstanceOf(Film.class,film);
+        Actor actor = new Actor();
+        Assertions.assertInstanceOf(Actor.class,actor);
     }
 
 }
