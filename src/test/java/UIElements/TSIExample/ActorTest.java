@@ -12,9 +12,19 @@ public class ActorTest {
     }
 
     @Test
-    public void testFilmType(){
-        Actor actor = new Actor();
-        Assertions.assertInstanceOf(Actor.class,actor);
+    public void testConstructor(){
+        Actor actor = new Actor("first","last");
+        Assertions.assertEquals("first",actor.getFirstname());
+        Assertions.assertEquals("last",actor.getLastname());
     }
+
+    @Test
+    public void setterGetterFilmID(){
+        Actor actor = new Actor();
+        actor.setActorID(1);
+        Assertions.assertEquals(1,actor.getActorID());
+    }
+
+
 
 }
