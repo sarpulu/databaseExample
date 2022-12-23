@@ -25,6 +25,21 @@ public class ActorTest {
         Assertions.assertEquals(1,actor.getActorID());
     }
 
+    @Test
+    public void setterGetterFirstName(){
+        Actor actor = new Actor();
+        actor.setFirstname("name");
+        Assertions.assertEquals("name",actor.getFirstname());
+    }
+
+    @Test
+    public void setterGetterLastName(){
+        Actor actor = new Actor();
+        actor.setFirstname("name");
+        Assertions.assertEquals("name",actor.getLastname());
+    }
+
+    
 
 
 }
