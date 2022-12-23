@@ -35,11 +35,11 @@ public class ActorTest {
     @Test
     public void setterGetterLastName(){
         Actor actor = new Actor();
-        actor.setFirstname("name");
+        actor.setLastname("name");
         Assertions.assertEquals("name",actor.getLastname());
     }
 
-    
+
 
 
 }
