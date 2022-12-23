@@ -11,6 +11,10 @@ public class ActorTest {
         Assertions.assertNotNull(actor);
     }
 
-    
+    @Test
+    public void testFilmType(){
+        Film film = new Film();
+        Assertions.assertInstanceOf(Film.class,film);
+    }
 
 }
