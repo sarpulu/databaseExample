@@ -30,6 +30,20 @@ public class FilmTest {
         film.setTitle("title");
         Assertions.assertEquals("title",film.getTitle());
     }
-    
+
+    @Test
+    public void setterGetterFilmDescription(){
+        Film film = new Film();
+        film.setDescription("description");
+        Assertions.assertEquals("description",film.getDescription());
+    }
+
+    @Test
+    public void setterGetterFilmLength(){
+        Film film = new Film();
+        film.setFilmLength(1);
+        Assertions.assertEquals(1,film.getFilmLength());
+    }
+
 
 }
